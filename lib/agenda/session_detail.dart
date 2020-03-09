@@ -24,7 +24,7 @@ class SessionDetail extends StatelessWidget {
                 size: 15,
               ),
               onPressed: () {
-                launch(speakers[0].fbUrl);
+                launch(session.fbUrl);
               },
             ),
             IconButton(
@@ -33,7 +33,7 @@ class SessionDetail extends StatelessWidget {
                 size: 15,
               ),
               onPressed: () {
-                launch(speakers[0].twitterUrl);
+                launch(session.twitterUrl);
               },
             ),
             IconButton(
@@ -42,7 +42,7 @@ class SessionDetail extends StatelessWidget {
                 size: 15,
               ),
               onPressed: () {
-                launch(speakers[0].linkedinUrl);
+                launch(session.linkedinUrl);
               },
             ),
             IconButton(
@@ -51,7 +51,8 @@ class SessionDetail extends StatelessWidget {
                 size: 15,
               ),
               onPressed: () {
-                launch(speakers[0].githubUrl);
+                print(session);
+                launch(session.githubUrl);
               },
             ),
           ],

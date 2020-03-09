@@ -35,6 +35,10 @@ class Session {
   String speakerInfo;
   String speakerId;
   String track;
+  String fbUrl;
+  String twitterUrl;
+  String linkedinUrl;
+  String githubUrl;
 
   Session({
     this.sessionId,
@@ -50,6 +54,10 @@ class Session {
     this.speakerInfo,
     this.speakerId,
     this.track,
+    this.fbUrl,
+    this.twitterUrl,
+    this.linkedinUrl,
+    this.githubUrl,
   });
 
   Session.fromJson(Map<String, dynamic> json) {
@@ -66,6 +74,10 @@ class Session {
     speakerInfo = json['speaker_info'];
     speakerId = json['speaker_id'];
     track = json['track'];
+    fbUrl = json['fb_url'];
+    twitterUrl = json['twitter_url'];
+    linkedinUrl = json['linkedin_url'];
+    githubUrl = json['github_url'];
   }
 
   Map<String, dynamic> toJson() {
@@ -83,6 +95,10 @@ class Session {
     data['speaker_info'] = this.speakerInfo;
     data['speaker_id'] = this.speakerId;
     data['track'] = this.track;
+    data['fb_url'] = this.fbUrl;
+    data['twitter_url'] = this.twitterUrl;
+    data['linkedin_url'] = this.linkedinUrl;
+    data['github_url'] = this.githubUrl;
     return data;
   }
 }
